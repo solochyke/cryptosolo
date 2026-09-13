@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cryptosolo | Africa's Premier Crypto & Naira Prop Trading Firm</title>
+  <meta name="description" content="Get funded up to ₦50,000,000 to trade Crypto, Forex, and Indices with generous 20% drawdown limits and instant payouts." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            },
+            dark: {
+              900: '#090d16',
+              850: '#0e1424',
+              800: '#141c30',
+              700: '#1e2942',
+              600: '#2d3b5b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass {
+      background: rgba(14, 20, 36, 0.7);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glow {
+      box-shadow: 0 0 50px -10px rgba(16, 185, 129, 0.25);
+    }
+  </style>
+</head>
+
+<body class="bg-dark-900 text-slate-200 font-sans antialiased overflow-x-hidden selection:bg-brand-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-brand-700 via-brand-600 to-emerald-700 text-white text-xs font-semibold py-2 px-4 text-center">
+    <span>🔥 Weekend Trading is now LIVE on all Cryptosolo accounts! Trade BTC, ETH & synthetic pairs 24/7.</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 glass border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-dark-900 font-extrabold text-xl shadow-lg shadow-brand-500/20">
+          CS
+        </div>
+        <span class="text-2xl font-extrabold tracking-tight text-white">Crypto<span class="text-brand-400">solo</span></span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#challenges" class="hover:text-brand-400 transition-colors">Challenges</a>
+        <a href="#rules" class="hover:text-brand-400 transition-colors">Trading Rules</a>
+        <a href="#features" class="hover:text-brand-400 transition-colors">Why Cryptosolo</a>
+        <a href="#payouts" class="hover:text-brand-400 transition-colors">Payout Proof</a>
+        <a href="#faq" class="hover:text-brand-400 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden md:flex items-center space-x-4">
+        <a href="#login" class="text-sm font-semibold text-slate-300 hover:text-white transition-colors">Client Portal</a>
+        <a href="#challenges" class="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-dark-900 font-bold text-sm transition-all transform hover:-translate-y-0.5 shadow-lg shadow-brand-500/20">
+          Get Funded Now
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobileMenuBtn" class="md:hidden text-slate-300 hover:text-white p-2" aria-label="Open navigation menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden glass border-t border-slate-800 px-6 py-5 space-y-4">
+      <a href="#challenges" class="block text-slate-300 hover:text-brand-400 font-medium">Challenges</a>
+      <a href="#rules" class="block text-slate-300 hover:text-brand-400 font-medium">Trading Rules</a>
+      <a href="#features" class="block text-slate-300 hover:text-brand-400 font-medium">Why Cryptosolo</a>
+      <a href="#payouts" class="block text-slate-300 hover:text-brand-400 font-medium">Payout Proof</a>
+      <a href="#faq" class="block text-slate-300 hover:text-brand-400 font-medium">FAQ</a>
+      <div class="pt-4 border-t border-slate-800 flex flex-col gap-3">
+        <a href="#login" class="text-center py-2 text-sm font-semibold text-slate-300 hover:text-white">Client Portal</a>
+        <a href="#challenges" class="text-center py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-dark-900 font-bold text-sm">Get Funded Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <!-- Ambient glow behind hero -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-500/15 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-brand-500/30 text-brand-400 text-xs font-semibold mb-6">
+        <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+        Nigeria's Premier High-Drawdown Prop Firm
+      </div>
+      
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight">
+        You Sabi Trade Crypto? <br/>
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-400 via-emerald-300 to-teal-200">
+          We Sabi Fund & Pay Instantly.
+        </span>
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-normal leading-relaxed">
+        Pass our simple 2-phase evaluation and access up to <span class="text-white font-semibold">₦50,000,000</span> in trading capital. Enjoy an industry-leading <span class="text-brand-400 font-semibold">20% Maximum Drawdown</span>, zero profit limits, and local instant bank payouts.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#challenges" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-500 hover:bg-brand-400 text-dark-900 font-extrabold text-base transition-all transform hover:-translate-y-0.5 shadow-xl shadow-brand-500/25">
+          Choose Account Size
+        </a>
+        <a href="#rules" class="w-full sm:w-auto px-8 py-4 rounded-xl glass hover:bg-dark-800 text-white font-bold text-base transition-colors border border-slate-700">
+          Review Simple Rules
+        </a>
+      </div>
+
+      <!-- Trust Metrics Bar -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-10 border-t border-slate-800/80">
+        <div>
+          <p class="text-3xl font-extrabold text-white">₦1.8B+</p>
+          <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Total Rewards Paid</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-brand-400">20%</p>
+          <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Max Drawdown Buffer</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-white">&lt; 3 Mins</p>
+          <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Instant Payout Speed</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-brand-400">80%</p>
+          <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Trader Profit Share</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Payout Certificate / Flash Ticker -->
+  <section id="payouts" class="py-4 bg-dark-850 border-y border-slate-800 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 flex items-center gap-6 overflow-x-auto text-xs text-slate-400 whitespace-nowrap scrollbar-none py-1">
+      <span class="text-brand-400 font-bold uppercase tracking-wider flex items-center gap-1.5">
+        <i data-lucide="zap" class="w-4 h-4 text-brand-400"></i> Recent Payouts:
+      </span>
+      <div class="flex items-center gap-2">
+        <span class="text-white font-semibold">Emeka N.</span> funded payout of <span class="text-brand-400 font-semibold">₦240,000</span> (NIBSS Instant) • 2m ago
+      </div>
+      <span class="text-slate-600">|</span>
+      <div class="flex items-center gap-2">
+        <span class="text-white font-semibold">Tunde A.</span> funded payout of <span class="text-brand-400 font-semibold">₦680,000</span> (USDT TRC20) • 7m ago
+      </div>
+      <span class="text-slate-600">|</span>
+      <div class="flex items-center gap-2">
+        <span class="text-white font-semibold">Blessing K.</span> funded payout of <span class="text-brand-400 font-semibold">₦150,000</span> (NIBSS Instant) • 14m ago
+      </div>
+    </div>
+  </section>
+
+  <!-- Account Pricing Table Section -->
+  <section id="challenges" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-3">Funding Evaluation</h2>
+      <p class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Select Your Cryptosolo Account</p>
+      <p class="mt-4 text-slate-400">No hidden fees, no complicated scaling lock-ins. Pass 2 phases and start withdrawing profit splits up to 80%.</p>
+    </div>
+
+    <!-- Account Size Tabs -->
+    <div class="flex flex-wrap justify-center gap-2 mb-12">
+      <button onclick="switchPlan('500k')" id="btn-500k" class="plan-tab px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-500 text-dark-900 transition-all">₦500,000</button>
+      <button onclick="switchPlan('1.5m')" id="btn-1.5m" class="plan-tab px-5 py-2.5 rounded-xl font-bold text-sm bg-dark-800 hover:bg-dark-700 text-slate-300 transition-all">₦1,500,000</button>
+      <button onclick="switchPlan('3m')" id="btn-3m" class="plan-tab px-5 py-2.5 rounded-xl font-bold text-sm bg-dark-800 hover:bg-dark-700 text-slate-300 transition-all">₦3,000,000</button>
+      <button onclick="switchPlan('5m')" id="btn-5m" class="plan-tab px-5 py-2.5 rounded-xl font-bold text-sm bg-dark-800 hover:bg-dark-700 text-slate-300 transition-all">₦5,000,000</button>
+      <button onclick="switchPlan('10m')" id="btn-10m" class="plan-tab px-5 py-2.5 rounded-xl font-bold text-sm bg-dark-800 hover:bg-dark-700 text-slate-300 transition-all">₦10,000,000</button>
+    </div>
+
+    <!-- Comparison Matrix Box -->
+    <div class="glass rounded-3xl p-6 sm:p-10 glow border border-brand-500/20 max-w-4xl mx-auto">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-8 border-b border-slate-800 gap-6">
+        <div>
+          <span class="text-xs uppercase font-bold text-brand-400 tracking-wider">Evaluation Challenge</span>
+          <h3 id="plan-heading" class="text-3xl font-extrabold text-white mt-1">₦500,000 Account</h3>
+          <p class="text-sm text-slate-400">Trade Crypto, Forex, Gold, and Indices on MT5 / cTrader</p>
+        </div>
+        <div class="text-left sm:text-right">
+          <p class="text-xs uppercase text-slate-400">One-time Registration Fee</p>
+          <div class="flex items-baseline gap-2 mt-1">
+            <span id="plan-fee" class="text-4xl font-black text-brand-400">₦7,500</span>
+            <span class="text-xs text-slate-400 line-through">₦10,000</span>
+          </div>
+          <span class="inline-block bg-brand-500/10 text-brand-400 text-xs px-2.5 py-0.5 rounded-full font-medium mt-1">Refunded on 1st Payout</span>
+        </div>
+      </div>
+
+      <!-- Specs Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 py-8 border-b border-slate-800 text-sm">
+        <div class="space-y-4">
+          <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
+            <span class="text-slate-400">Phase 1 Profit Target</span>
+            <span id="p1-target" class="font-bold text-white">10% (₦50,000)</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
+            <span class="text-slate-400">Phase 2 Profit Target</span>
+            <span id="p2-target" class="font-bold text-white">5% (₦25,000)</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
+            <span class="text-slate-400">Maximum Overall Drawdown</span>
+            <span class="font-bold text-brand-400">20% (Trailing)</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
+            <span class="text-slate-400">Daily Drawdown Limit</span>
+            <span class="font-bold text-emerald-400">None (Zero Daily Cap)</span>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
+            <span class="text-slate-400">Minimum Trading Days</span>
+            <span class="font-bold text-white">0 Days (Pass Anytime)</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
+            <span class="text-slate-400">Trading Period</span>
+            <span class="font-bold text-white">Unlimited</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
+            <span class="text-slate-400">Profit Split</span>
+            <span class="font-bold text-brand-400">70% - 80%</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
+            <span class="text-slate-400">Weekend Holding</span>
+            <span class="font-bold text-emerald-400">Allowed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-2 text-xs text-slate-400">
+          <i data-lucide="shield-check" class="w-5 h-5 text-brand-400"></i>
+          <span>Instant MT5 Credentials sent via Email & SMS</span>
+        </div>
+        <button id="plan-btn" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-brand-500 hover:bg-brand-400 text-dark-900 font-extrabold text-sm transition-all transform hover:-translate-y-0.5 shadow-lg shadow-brand-500/20">
+          Start ₦500,000 Challenge
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Competitive Pillars -->
+  <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-2">Why Traders Love Us</h2>
+      <p class="text-3xl font-extrabold text-white">Built For Real Traders, Not Breach Traps</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="glass p-8 rounded-2xl border border-slate-800 hover:border-brand-500/40 transition-colors">
+        <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center mb-6">
+          <i data-lucide="shield-alert" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">20% Max Drawdown</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          While traditional prop firms fail you at 8% or 10%, Cryptosolo gives you a full 20% cushion so normal crypto market swings won't blow your account.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="glass p-8 rounded-2xl border border-slate-800 hover:border-brand-500/40 transition-colors">
+        <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center mb-6">
+          <i data-lucide="banknote" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">NIBSS & Crypto Payouts</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Get paid directly into your Nigerian bank account via NIBSS instant transfer in Naira, or cash out via USDT (TRC20 / BEP20) in minutes.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="glass p-8 rounded-2xl border border-slate-800 hover:border-brand-500/40 transition-colors">
+        <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center mb-6">
+          <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Account Reset Discounts</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Breached your evaluation? Never pay full price again. Cryptosolo offers 20% automated discounts on phase resets so you keep your momentum.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules Section -->
+  <section id="rules" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-2">Transparent Framework</h2>
+      <p class="text-3xl font-extrabold text-white">Just 2 Core Rules, No Hidden Catches</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-8 rounded-2xl bg-dark-850 border border-slate-800">
+        <div class="text-brand-400 font-extrabold text-2xl mb-2">01. Profit Target</div>
+        <h4 class="text-lg font-bold text-white mb-2">Phase 1: 10% | Phase 2: 5%</h4>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Hit the target at your own pace. There are no minimum trading days and no time constraints. Once reached, you move to Phase 2 or get funded instantly.
+        </p>
+      </div>
+
+      <div class="p-8 rounded-2xl bg-dark-850 border border-slate-800">
+        <div class="text-brand-400 font-extrabold text-2xl mb-2">02. Maximum Drawdown</div>
+        <h4 class="text-lg font-bold text-white mb-2">20% Maximum Balance Limit</h4>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Never let your overall equity drop more than 20% from the highest registered balance. There is strictly NO daily loss limit to worry about.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-8 p-6 rounded-2xl glass border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+      <div class="flex items-center gap-3">
+        <i data-lucide="check-circle" class="w-6 h-6 text-brand-400 flex-shrink-0"></i>
+        <span><strong>Zero Consistency Rules:</strong> Scalp, swing, hold over weekends, or trade economic news releases freely.</span>
+      </div>
+      <a href="#challenges" class="px-5 py-2.5 rounded-lg bg-dark-800 hover:bg-dark-700 text-brand-400 font-semibold text-xs border border-brand-500/20 whitespace-nowrap">
+        Start Trading Now
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-2">Questions & Answers</h2>
+      <p class="text-3xl font-extrabold text-white">Frequently Asked Questions</p>
+    </div>
+
+    <div class="space-y-4">
+      <details class="glass rounded-xl p-5 border border-slate-800 cursor-pointer">
+        <summary class="font-bold text-white flex justify-between items-center select-none">
+          How quickly do I receive my funded payouts?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400"></i>
+        </summary>
+        <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+          Cryptosolo processes withdrawals via automated NIBSS instant settlement for Nigerian bank accounts (typically within 3 to 15 minutes) and direct USDT transfer for global traders.
+        </p>
+      </details>
+
+      <details class="glass rounded-xl p-5 border border-slate-800 cursor-pointer">
+        <summary class="font-bold text-white flex justify-between items-center select-none">
+          Can I trade cryptocurrencies on weekends?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400"></i>
+        </summary>
+        <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+          Yes. Our crypto-enabled account pairs (BTCUSD, ETHUSD, SOLUSD, etc.) trade continuously 24 hours a day, 7 days a week with zero weekend holding restrictions.
+        </p>
+      </details>
+
+      <details class="glass rounded-xl p-5 border border-slate-800 cursor-pointer">
+        <summary class="font-bold text-white flex justify-between items-center select-none">
+          Is KYC required before I buy a challenge?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400"></i>
+        </summary>
+        <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+          No KYC is required to purchase or complete the evaluation phases. Basic ID verification is only required prior to receiving your first live profit withdrawal.
+        </p>
+      </details>
+
+      <details class="glass rounded-xl p-5 border border-slate-800 cursor-pointer">
+        <summary class="font-bold text-white flex justify-between items-center select-none">
+          Is the evaluation fee refundable?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400"></i>
+        </summary>
+        <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+          Yes! 100% of your initial evaluation fee is refunded alongside your very first live funded profit withdrawal.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div class="bg-gradient-to-r from-brand-600 to-emerald-700 rounded-3xl p-10 sm:p-14 text-center text-white relative overflow-hidden shadow-2xl">
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Ready to Prove You Sabi Trade?</h2>
+      <p class="mt-4 text-emerald-100 max-w-xl mx-auto text-base">
+        Pick your account size, trade with the safest 20% drawdown in the market, and get funded today.
+      </p>
+      <div class="mt-8">
+        <a href="#challenges" class="px-8 py-4 rounded-xl bg-white text-dark-900 font-extrabold text-base transition-all hover:bg-slate-100 shadow-xl">
+          Get Started with Cryptosolo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark-950 border-t border-slate-800 text-slate-500 text-xs py-14 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div class="space-y-3">
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 rounded-lg bg-brand-500 flex items-center justify-center text-dark-900 font-bold text-xs">CS</div>
+          <span class="text-lg font-bold text-white">Crypto<span class="text-brand-400">solo</span></span>
+        </div>
+        <p class="text-slate-400 leading-relaxed">Empowering disciplined traders across Africa with fair evaluation terms, high drawdowns, and instant cash flow.</p>
+      </div>
+
+      <div>
+        <h5 class="text-white font-semibold mb-3">Quick Navigation</h5>
+        <ul class="space-y-2">
+          <li><a href="#challenges" class="hover:text-white">Account Types</a></li>
+          <li><a href="#rules" class="hover:text-white">Drawdown Rules</a></li>
+          <li><a href="#faq" class="hover:text-white">Evaluation FAQ</a></li>
+          <li><a href="#payouts" class="hover:text-white">Payout Certificates</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="text-white font-semibold mb-3">Payment Methods</h5>
+        <p class="text-slate-400 mb-2">We accept instant local deposits and global crypto rails:</p>
+        <p class="text-white font-medium">Paystack • Direct Naira Bank Transfer • USDT TRC20 / BEP20</p>
+      </div>
+
+      <div>
+        <h5 class="text-white font-semibold mb-3">Community & Support</h5>
+        <p class="text-slate-400 mb-3">Join our official Telegram community for daily analysis and payout proofs.</p>
+        <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-dark-800 hover:bg-dark-700 text-brand-400 font-bold border border-slate-700">
+          <i data-lucide="send" class="w-4 h-4"></i> Join Telegram Channel
+        </a>
+      </div>
+    </div>
+
+    <!-- Regulatory Disclaimer -->
+    <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/80 text-[11px] leading-relaxed text-slate-500">
+      <p class="mb-2"><strong>Risk Disclosure:</strong> All accounts provided by Cryptosolo during the evaluation and funded stages are simulated trading accounts using real-time market data. Trading financial instruments such as foreign exchange (Forex), cryptocurrencies, and CFDs involves substantial risk and may not be suitable for all investors.</p>
+      <p>&copy; <span id="year"></span> Cryptosolo Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Interactivity Script -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Set Dynamic Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Plan Switcher Data
+    const plans = {
+      '500k': {
+        heading: '₦500,000 Account',
+        fee: '₦7,500',
+        p1: '10% (₦50,000)',
+        p2: '5% (₦25,000)',
+        btnText: 'Start ₦500,000 Challenge'
+      },
+      '1.5m': {
+        heading: '₦1,500,000 Account',
+        fee: '₦18,000',
+        p1: '10% (₦150,000)',
+        p2: '5% (₦75,000)',
+        btnText: 'Start ₦1,500,000 Challenge'
+      },
+      '3m': {
+        heading: '₦3,000,000 Account',
+        fee: '₦32,000',
+        p1: '10% (₦300,000)',
+        p2: '5% (₦150,000)',
+        btnText: 'Start ₦3,000,000 Challenge'
+      },
+      '5m': {
+        heading: '₦5,000,000 Account',
+        fee: '₦50,000',
+        p1: '10% (₦500,000)',
+        p2: '5% (₦250,000)',
+        btnText: 'Start ₦5,000,000 Challenge'
+      },
+      '10m': {
+        heading: '₦10,000,000 Account',
+        fee: '₦95,000',
+        p1: '10% (₦1,000,000)',
+        p2: '5% (₦500,000)',
+        btnText: 'Start ₦10,000,000 Challenge'
+      }
+    };
+
+    function switchPlan(key) {
+      const selected = plans[key];
+      if (!selected) return;
+
+      // Update Texts
+      document.getElementById('plan-heading').textContent = selected.heading;
+      document.getElementById('plan-fee').textContent = selected.fee;
+      document.getElementById('p1-target').textContent = selected.p1;
+      document.getElementById('p2-target').textContent = selected.p2;
+      document.getElementById('plan-btn').textContent = selected.btnText;
+
+      // Update Button Styles
+      document.querySelectorAll('.plan-tab').forEach(btn => {
+        btn.classList.remove('bg-brand-500', 'text-dark-900');
+        btn.classList.add('bg-dark-800', 'text-slate-300');
+      });
+
+      const activeBtn = document.getElementById('btn-' + key);
+      activeBtn.classList.remove('bg-dark-800', 'text-slate-300');
+      activeBtn.classList.add('bg-brand-500', 'text-dark-900');
+    }
+  </script>
+</body>
+</html>
